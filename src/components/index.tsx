@@ -26,6 +26,7 @@ const Chrono: React.FunctionComponent<Partial<TimelineProps>> = ({
   slideItemDuration = 5000,
   slideShow = false,
   theme,
+  onTimelineItemSelected,
 }: Partial<TimelineProps>) => {
   const [timeLineItems, setItems] = useState<TimelineItemModel[]>([]);
   const timeLineItemsRef = useRef<TimelineItemModel[]>();
@@ -79,6 +80,10 @@ const Chrono: React.FunctionComponent<Partial<TimelineProps>> = ({
       if (items.length - 1 === actvTimelineIndex) {
         setSlideshowActive(false);
       }
+    }
+
+    if (onTimelineItemSelected != undefined) {
+      onTimelineItemSelected(timeLineItems[actvTimelineIndex]);
     }
   }, []);
 

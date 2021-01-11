@@ -156,6 +156,8 @@ export interface TimelineProps {
   allowDynamicUpdate?: boolean;
 
   onScrollEnd?: () => void;
+
+  onTimelineItemSelected?: (item: TimelineItemModel) => void;
 }
 
 export type TimelineMode = 'VERTICAL' | 'HORIZONTAL' | 'VERTICAL_ALTERNATING';
