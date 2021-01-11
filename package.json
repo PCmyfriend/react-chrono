@@ -1,6 +1,6 @@
 {
-  "name": "react-chrono",
-  "version": "1.8.4",
+  "name": "@pcmyfriend/react-chrono",
+  "version": "1.0.0",
   "license": "MIT",
   "description": "A Modern Timeline component for React",
   "keywords": [
@@ -15,7 +15,7 @@
     "type": "git"
   },
   "scripts": {
-    "build": "snowpack build",
+    "build": "snowpack build --polyfill-node",
     "eslint": "eslint ./src/**/*.tsx",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
     "lint": "prettier --check \"src/**/*.{js,jsx,ts,tsx}\"",
