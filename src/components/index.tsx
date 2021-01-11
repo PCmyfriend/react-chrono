@@ -82,8 +82,8 @@ const Chrono: React.FunctionComponent<Partial<TimelineProps>> = ({
       }
     }
 
-    if (onTimelineItemSelected != undefined && items != undefined) {
-      onTimelineItemSelected(items[actvTimelineIndex]);
+    if (onTimelineItemSelected != undefined) {
+      onTimelineItemSelected(actvTimelineIndex);
     }
   }, []);
 

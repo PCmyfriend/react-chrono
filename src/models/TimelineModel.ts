@@ -157,7 +157,7 @@ export interface TimelineProps {
 
   onScrollEnd?: () => void;
 
-  onTimelineItemSelected?: (item: TimelineItemModel) => void;
+  onTimelineItemSelected?: (itemIndex: number) => void;
 }
 
 export type TimelineMode = 'VERTICAL' | 'HORIZONTAL' | 'VERTICAL_ALTERNATING';
